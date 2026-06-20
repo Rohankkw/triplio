@@ -57,7 +57,7 @@ export function Footer() {
       </footer>
 
       <div className="bg-primary py-8 px-margin-mobile md:px-margin-desktop border-t border-white/5 text-center text-on-primary/30 text-[12px] font-label-bold">
-        © 2024 Triplio Luxury Travel. All rights reserved. <span className="mx-2">•</span> Design by seative.digital
+        © 2024 Triplio Luxury Travel. All rights reserved. <span className="mx-2">•</span> Design by <a href="https://saaryana.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline">saaryana</a>
       </div>
     </>
   );

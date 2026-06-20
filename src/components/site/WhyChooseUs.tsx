@@ -1,18 +1,18 @@
 export function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-section-gap bg-primary text-on-primary relative overflow-hidden">
+    <section id="why-choose-us" className="py-12 md:py-section-gap bg-primary text-on-primary relative overflow-hidden">
       {/* Abstract Glows */}
       <div className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-secondary/20 blur-[120px] rounded-full"></div>
       <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-secondary-container/10 blur-[120px] rounded-full"></div>
 
-      <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto text-center mb-16">
+      <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-8 md:mb-16">
         <h3 className="font-headline-lg text-headline-lg">Why Choose Triplio?</h3>
         <p className="text-on-primary/60 max-w-2xl mx-auto mt-4 text-body-lg">
           We combine technological precision with a human touch to curate travel experiences that transcend the ordinary.
         </p>
       </div>
 
-      <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Card 1 */}
         <div className="glass p-12 rounded-[40px] group hover:bg-white/20 transition-all duration-500">
           <div className="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center mb-8 shadow-lg shadow-secondary/20">

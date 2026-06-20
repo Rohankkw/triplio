@@ -25,12 +25,12 @@ const destinations = [
 
 export function Destinations() {
   return (
-    <section id="destinations" className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-white dark:bg-primary text-slate-900 dark:text-white transition-colors duration-500">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+    <section id="destinations" className="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-white dark:bg-primary text-slate-900 dark:text-white transition-colors duration-500">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-6">
         <div className="space-y-2">
           <span className="text-secondary dark:text-secondary-fixed-dim font-label-bold tracking-widest uppercase text-[12px]">Our Destination</span>
           <h3 className="font-headline-lg text-headline-lg text-on-surface dark:text-white leading-tight">
-            Your Journey to the Perfect<br />Destination Begins Here
+            Your Journey to the Perfect <br className="hidden sm:inline" />Destination Begins Here
           </h3>
         </div>
         <button className="flex items-center gap-3 font-label-bold group cursor-pointer">

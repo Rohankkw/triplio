@@ -26,7 +26,7 @@ export function Nav() {
   };
 
   return (
-    <header className="fixed top-0 left-1/2 -translate-x-1/2 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max bg-white/15 backdrop-blur-xl border-b border-white/10">
+    <header className="fixed top-0 left-1/2 -translate-x-1/2 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max bg-white/15 backdrop-blur-xl border-b border-white/10">
       <div className="flex items-center gap-2">
         <span className="material-symbols-outlined text-on-primary">language</span>
         <span className="text-headline-md font-headline-md font-extrabold tracking-tighter text-on-primary">triplio</span>
@@ -43,17 +43,18 @@ export function Nav() {
         {/* Dark Mode Toggle */}
         <button
           onClick={toggleTheme}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 text-on-primary hover:bg-white/20 transition-all duration-300 cursor-pointer"
+          className="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 text-on-primary hover:bg-white/20 transition-all duration-300 cursor-pointer"
           aria-label="Toggle Theme"
         >
-          <span className="material-symbols-outlined text-[20px]">
+          <span className="material-symbols-outlined text-[18px] md:text-[20px]">
             {isDark ? "light_mode" : "dark_mode"}
           </span>
         </button>
 
-        <button className="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 flex items-center gap-2 cursor-pointer">
-          Book schedule
-          <span className="material-symbols-outlined text-[18px]">north_east</span>
+        <button className="bg-secondary-container text-on-secondary-container font-label-bold text-xs md:text-label-bold px-4 py-2.5 md:px-6 md:py-3 rounded-full hover:bg-white/10 transition-all duration-300 flex items-center gap-2 cursor-pointer shrink-0">
+          <span className="hidden sm:inline">Book schedule</span>
+          <span className="sm:hidden">Book</span>
+          <span className="material-symbols-outlined text-[16px] md:text-[18px]">north_east</span>
         </button>
       </div>
     </header>
